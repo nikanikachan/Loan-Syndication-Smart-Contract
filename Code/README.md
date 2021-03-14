@@ -5,7 +5,7 @@
 Before deploying there are certain time variables that can be established within the contract code. The limitations of solidity do not allow for time to be combined with uint variables as of March 2021. The two sections of time are for the crowdsale duration and loan contract duration. These will be preset at 7 days and 1 year; however, should one wish to test this contract it would be appropriate to change these to a smaller amount of time.
 
 
-![1](https://github.com/nikanikachan/p3_loansyndication/blob/master/Code/Images2/Set_Time_Variables.png)
+![1](https://github.com/nikanikachan/p3_loansyndication/blob/master/Code/Images2/Set_Time_Variables.PNG)
 
 - Provide a name for the token, symbol, wallet address of the borrower, funding goal of the borrower, and maximum amount to be raised by the borrower.
 
