@@ -62,7 +62,7 @@ Our solution is to replace the archaic process of calling and requesting for pro
 | `deployer`    | Call function that shows wallet of deployer. In this example, deployer is Borrower |
 | `get_lowestBidder`    | Call function that shows wallet of current lowest rate bidder |
 | `get_lowestRate`    | Call function that shows wallet of current lowest rate |
-| `get_BidList`    | ??  |
+| `get_BidList`    | Call Function to show bid value of an address. In this example, bid value must equal the entire loan amount  |
 | `goal`    | Call function that shows borrower's full loan amount |
 | `lowestBid`    | Call function that shows borrower's loan amount. Note that all bidders must bid for the full notional amount |
 | `lowestBidder`    | Call function that shows address of current lowest bidder |
@@ -92,7 +92,7 @@ Our solution is to deploy a token crowdsale to replace the manual process of cal
 | `claimRefund` | For syndicate banks to get refund of ETH if crowdsale is unsuccessful |
 | `finalize`    | For crowdsale deployer to end crowdsale |
 | `withdrawTokens`    | For syndicate banks to withdraw SYN tokens|
-| `balanceOf`    | Call function to check balance of crowdsale contract ?? |
+| `balanceOf`    | Call function to check balance of address submitted |
 | `cap`    | Call function to show crowdsale cap |
 | `capReached`    | Call function to show whether cap is reached. Returns true or false |
 | `closingTime`    | Call function to show time left in crowdsale |
@@ -101,7 +101,7 @@ Our solution is to deploy a token crowdsale to replace the manual process of cal
 | `goalReached`    | Call function to show if goal has been reached. Returns true of false |
 | `hasClosed`    | Call function to show if crowdsale opening period has expired. Returns true or false |
 | `isOpen`    | Call function to show if crowdsale is open. Returns true or false |
-| `openingTime`    | Call function to show opening time?? |
+| `openingTime`    | Call function to show time of contract deployment and in this example, crowdsale opening as well |
 | `rate`    | Call function to show ETH:SYN token conversion rate |
 | `token`    | Call function to show token address |
 | `wallet`    | Call function that shows crowdsale deployer wallet. In this case, the underwriter |
@@ -159,11 +159,10 @@ Optimization of Auction and Crowdsale contracts to minimize gas costs in deploym
 ## 9. D-app Demo <a name="Demo"></a>
 
 - Your metamask should be in the Ropsten network to see all the features
-- Click [here](https://nikanikachan.github.io/p3_loansyndication/Frontend/index.html) to launch the Auction front end of our loan syndication contract.
+- Note that for the purpose of this demo, the loan amount has been set to 1 ETH for easier testing.
+- Click [here](https://nikanikachan.github.io/p3_loansyndication/Frontend/index.html) to launch the Auction front end of our loan syndication contract in your browser.
 
-**Note that for the purpose of this demo, the loan amount has been set to 1 ETH for easier testing.
-
-If you do not have Metamesk installed, See GIF demo below:
+If you do not have Metamask installed, See GIF demo below:
 
 ![gif](Images/auction.gif)
 
