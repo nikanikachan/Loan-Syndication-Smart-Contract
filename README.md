@@ -47,7 +47,23 @@ Our solution is to replace the archaic process of calling and requesting for pro
 
 ### c. Auction Contract Functions <a name="auctionfunctions"></a>
 
-[See documentation](https://docs.google.com/document/d/1Fq932vwgDW1wLXijvU0Vx_opCvKC-jUVZYIqZnFBtMA/edit)
+| Function | Description |
+| ------ | ----------- |
+| `bid`   | For prospective underwriters to bid, requires address and interest rate bid |
+| `endAuction` | For deployer to end auction |
+| `withdraw`    | For losing bidders to withdraw their ETH |
+| `AuctionEnded`    | Call function to check if auction has ended. Returns true or false  |
+| `balance`    | Call function to check balance in auction contract |
+| `beneficiary`    | Call function to show where the ETH from auction goes. In this example, beneficiary is the Borrower |
+| `deployer`    | Call function that shows wallet of deployer. In this example, deployer is Borrower |
+| `get_lowestBidder`    | Call function that shows wallet of current lowest rate bidder |
+| `get_lowestRate`    | Call function that shows wallet of current lowest rate |
+| `get_BidList`    | ??  |
+| `goal`    | Call function that shows borrower's full loan amount |
+| `lowestBid`    | Call function that shows borrower's loan amount. Note that all bidders must bid for the full notional amount |
+| `lowestBidder`    | Call function that shows address of current lowest bidder |
+| `lowestRate`    | Call function that shows current lowest bid |
+
 
 ## 3. Crowdsale Smart Contract to distribute loan risk <a name="crowdsale"></a>
 
@@ -66,7 +82,26 @@ Our solution is to deploy a token crowdsale to replace the manual process of cal
 
 ### c. Crowdsale Contract Functions <a name="#crowdsalecontractfunctions"></a>
 
-[See documentation](https://docs.google.com/document/d/1Fq932vwgDW1wLXijvU0Vx_opCvKC-jUVZYIqZnFBtMA/edit)
+| Function | Description |
+| ------ | ----------- |
+| `buyTokens`   | For syndicate banks to buy portions of the loan in exchange for tokens, requires beneficiary |
+| `claimRefund` | For syndicate banks to get refund of ETH if crowdsale is unsuccessful |
+| `finalize`    | For crowdsale deployer to end crowdsale |
+| `withdrawTokens`    | For syndicate banks to withdraw SYN tokens|
+| `balanceOf`    | Call function to check balance of crowdsale contract ?? |
+| `cap`    | Call function to show crowdsale cap |
+| `capReached`    | Call function to show whether cap is reached. Returns true or false |
+| `closingTime`    | Call function to show time left in crowdsale |
+| `finalized`    | Call function to show if crowdsale has been finalized. Returns true or false |
+| `goal`    | Call function to show crowdsale goal amount |
+| `goalReached`    | Call function to show if goal has been reached. Returns true of false |
+| `hasClosed`    | Call function to show if crowdsale opening period has expired. Returns true or false |
+| `isOpen`    | Call function to show if crowdsale is open. Returns true or false |
+| `openingTime`    | Call function to show opening time?? |
+| `rate`    | Call function to show ETH:SYN token conversion rate |
+| `token`    | Call function to show token address |
+| `wallet`    | Call function that shows crowdsale deployer wallet. In this case, the underwriter |
+| `weiRaised`    | Call function to show how much wei is currently raised |
 
 ## 4. Benefits of doing loan syndication on the Blockchain <a name="blockchain"></a>
 
@@ -89,25 +124,25 @@ Optimization of Auction and Crowdsale contracts to minimize gas costs in deploym
 
 2. Select `LoanContractDeployer` from the contract dropdown in the deployment section of Remix
 
-3. Provide a name for the token, symbol, wallet address of the borrower, funding goal of the borrower, and maximum amount to be raised by the borrower and click on transact. This should generate a contract called LOANCONTRACTDEPLOYER
+3. Provide a name for the token, symbol, wallet address of the borrower, funding goal of the borrower, and maximum amount to be raised by the borrower and click on transact. This should generate a contract called **LOANCONTRACTDEPLOYER AT 0x**
 
 4. Select `LoanAuction` from the contract dropdown in the Deployment section of Remix
 
-5. Copy the `auction_address` from the LOANCONTRACTDEPLOYER contract and paste it into the `At Address` field of the deployment section. Click on the `At Address` button and this should generate a new contract named LOANAUCTION.
+5. Copy the `auction_address` from **LOANCONTRACTDEPLOYER AT Ox** and paste it into the `At Address` field of the deployment section. Click on the `At Address` button and this should generate a new contract named **LOANAUCTION AT 0x**.
 
-6. Competing syndicate managers can use the `bid button` under LOANAUCTION to bid for the full amount of the loan at the lowest interest rate they are willing to receive.
+6. Competing syndicate managers can use the `bid button` under **LOANAUCTION AT 0x** to bid for the full amount of the loan at the lowest interest rate they are willing to receive.
 
-7. To close the auction, click on the `endAuction` button under the LOANAUCTION contract. Lowest interest rate bidder wins the auction, his ETH goes to the borrower in exchange for the right to issue tokens on behalf of the borrower. Losers can withdraw their ETH using the `withdraw` button.
+7. To close the auction, click on the `endAuction` button under the **LOANAUCTION AT 0x** contract. Lowest interest rate bidder wins the auction, his ETH goes to the borrower in exchange for the right to issue tokens on behalf of the borrower. Losers can withdraw their ETH using the `withdraw` button.
 
 8. Select `MyTokenSale` from the contract dropdown in the Deployment section of Remix
 
-9. Copy the token_sale_address from the LOANCONTRACTDEPLOYER contract and paste it into the `At Address` field of the deployment section. Click on the `At Address` button and this should generate a new contract named MYTOKENSALE.
+9. Copy the token_sale_address from the **LOANCONTRACTDEPLOYER AT 0x** contract and paste it into the `At Address` field of the deployment section. Click on the `At Address` button and this should generate a new contract named **MYTOKENSALE AT 0x**.
 
 10. Banks who want to participate in the funding of the large loan can buy SYN tokens using the `buyTokens` button.
 
-11. Once the crowdsale is compelete, click on the `finalized` function to end the crowdsale.
+11. Once the crowdsale is compelete, click on the `finalize` function to end the crowdsale.
 
-12. To process the final payment (borrower pays back the full notional + interest), go back to LOANCONTRACTDEPLOYER and click on `Final_Payment`, fill in the fields for each participating bank and click on transact
+12. To process the final payment (borrower pays back the full notional + interest), go back to **LOANCONTRACTDEPLOYER AT 0x** and click on `Final_Payment`, fill in the fields for each participating bank and click on transact
 
 [See Full Documentation Here](Code/README.md)
 
@@ -117,6 +152,8 @@ Optimization of Auction and Crowdsale contracts to minimize gas costs in deploym
 - [Google Slides Presentation](https://docs.google.com/presentation/d/1K1VmnZDQIOmeCtK0qjW2Ku28JNX6BfrWNBkMgs7LzBQ/edit#slide=id.gc7142b1278_0_83)
 
 ## 9. D-app Demo <a name="Demo"></a>
-Click [here](Frontend/index.html) to launch the Auction front end of our loan syndication contract
+
+For this section, please make sure you are in our Github page:[Loan Syndication](https://nikanikachan.github.io/p3_loansyndication/)
+Click [here](Frontend/index.html) to launch the Auction front end of our loan syndication contract.
 
 
