@@ -85,26 +85,31 @@ Optimization of Auction and Crowdsale contracts to minimize gas costs in deploym
 
 ## 7. Contract Deployment Instructions <a name="instructions"></a>
 
-1. In Remix, compile [the solidity contract file](Code/SYN)
+1. In Remix, compile [the solidity contract file](Code/SYN.sol)
+
 2. Select `LoanContractDeployer` from the contract dropdown in the deployment section of Remix
+
 3. Provide a name for the token, symbol, wallet address of the borrower, funding goal of the borrower, and maximum amount to be raised by the borrower and click on transact. This should generate a contract called LOANCONTRACTDEPLOYER
+
 4. Select `LoanAuction` from the contract dropdown in the Deployment section of Remix
+
 5. Copy the `auction_address` from the LOANCONTRACTDEPLOYER contract and paste it into the `At Address` field of the deployment section. Click on the `At Address` button and this should generate a new contract named LOANAUCTION.
+
 6. Competing syndicate managers can use the `bid button` under LOANAUCTION to bid for the full amount of the loan at the lowest interest rate they are willing to receive.
+
 7. To close the auction, click on the `endAuction` button under the LOANAUCTION contract. Lowest interest rate bidder wins the auction, his ETH goes to the borrower in exchange for the right to issue tokens on behalf of the borrower. Losers can withdraw their ETH using the `withdraw` button.
+
 8. Select `MyTokenSale` from the contract dropdown in the Deployment section of Remix
+
 9. Copy the token_sale_address from the LOANCONTRACTDEPLOYER contract and paste it into the `At Address` field of the deployment section. Click on the `At Address` button and this should generate a new contract named MYTOKENSALE.
+
 10. Banks who want to participate in the funding of the large loan can buy SYN tokens using the `buyTokens` button.
+
 11. Once the crowdsale is compelete, click on the `finalized` function to end the crowdsale.
+
 12. To process the final payment (borrower pays back the full notional + interest), go back to LOANCONTRACTDEPLOYER and click on `Final_Payment`, fill in the fields for each participating bank and click on transact
 
-
-
-
-(https://docs.google.com/document/d/1Fq932vwgDW1wLXijvU0Vx_opCvKC-jUVZYIqZnFBtMA/edit)
-
-
-[See documentation](https://docs.google.com/document/d/1Fq932vwgDW1wLXijvU0Vx_opCvKC-jUVZYIqZnFBtMA/edit)
+[See Full Documentation Here](Code/README.md)
 
 ## 8. Appendix <a name="Appendix"></a>
 
