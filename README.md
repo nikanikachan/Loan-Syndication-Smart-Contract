@@ -59,14 +59,14 @@ Our solution is to replace the archaic process of calling and requesting for pro
 | `AuctionEnded`    | Call function to check if auction has ended. Returns true or false  |
 | `balance`    | Call function to check balance in auction contract |
 | `beneficiary`    | Call function to show where the ETH from auction goes. In this example, beneficiary is the Borrower |
-| `deployer`    | Call function that shows wallet of deployer. In this example, deployer is Borrower |
-| `get_lowestBidder`    | Call function that shows wallet of current lowest rate bidder |
-| `get_lowestRate`    | Call function that shows wallet of current lowest rate |
+| `deployer`    | Call function to show wallet of deployer. In this example, deployer is Borrower |
+| `get_lowestBidder`    | Call function to show wallet of current lowest rate bidder |
+| `get_lowestRate`    | Call function to show current lowest rate |
 | `get_BidList`    | Call Function to show bid value of an address. In this example, bid value must equal the entire loan amount  |
-| `goal`    | Call function that shows borrower's full loan amount |
-| `lowestBid`    | Call function that shows borrower's loan amount. Note that all bidders must bid for the full notional amount |
-| `lowestBidder`    | Call function that shows address of current lowest bidder |
-| `lowestRate`    | Call function that shows current lowest bid |
+| `goal`    | Call function to show borrower's full loan amount |
+| `lowestBid`    | Call function to show borrower's loan amount. Note that all bidders must bid for the full notional amount |
+| `lowestBidder`    | Call function to show address of current lowest bidder |
+| `lowestRate`    | Call function to show current lowest rate |
 
 
 ## 3. Crowdsale Smart Contract to distribute loan risk <a name="crowdsale"></a>
@@ -98,13 +98,13 @@ Our solution is to deploy a token crowdsale to replace the manual process of cal
 | `closingTime`    | Call function to show time left in crowdsale |
 | `finalized`    | Call function to show if crowdsale has been finalized. Returns true or false |
 | `goal`    | Call function to show crowdsale goal amount |
-| `goalReached`    | Call function to show if goal has been reached. Returns true of false |
+| `goalReached`    | Call function to show if goal has been reached. Returns true or false |
 | `hasClosed`    | Call function to show if crowdsale opening period has expired. Returns true or false |
 | `isOpen`    | Call function to show if crowdsale is open. Returns true or false |
 | `openingTime`    | Call function to show time of contract deployment and in this example, crowdsale opening as well |
 | `rate`    | Call function to show ETH:SYN token conversion rate |
 | `token`    | Call function to show token address |
-| `wallet`    | Call function that shows crowdsale deployer wallet. In this case, the underwriter |
+| `wallet`    | Call function to show crowdsale deployer wallet. In this case, the underwriter |
 | `weiRaised`    | Call function to show how much wei is currently raised |
 
 ## 4. Benefits of doing loan syndication on the Blockchain <a name="blockchain"></a>
