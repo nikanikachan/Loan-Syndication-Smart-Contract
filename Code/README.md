@@ -15,7 +15,7 @@ Note: The cap amount is a functionality placeholder. In this version the bidders
 
 Use the loan auction address created by deploying the first contract to allow for the bidding by large major banks. The lowest bidder will win the auction and the rate entered will be used for the interest payment final calculation. The ether will be transferred to the borrower in exchange for the right to issue tokens on behalf of the borrower. When the borrower is satisfied with the auction results they can use the endAuction function to close the auction. Losing bidders can withdraw their ether with the withdraw function.
 
-![2](https://github.com/nikanikachan/p3_loansyndication/blob/master/Code/Images2/Loan_Auction_Deployment.png)
+![2](Images2/Loan_Auction_Deployment.PNG)
 
 Note: Improvements to this contract would include a self-destruct feature if the auction is not ended within a certain time. This would return ether to the bidders automatically.
 
