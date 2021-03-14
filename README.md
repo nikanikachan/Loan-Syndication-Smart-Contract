@@ -80,7 +80,7 @@ Our solution is to deploy a token crowdsale to replace the manual process of cal
 ![crowdsale](Images/crowdsale.png)
 
 
-### c. Crowdsale Contract Functions <a name="#crowdsalefunctions"></a>
+### c. Crowdsale Contract Functions <a name="crowdsalefunctions"></a>
 
 | Function | Description |
 | ------ | ----------- |
