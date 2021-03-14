@@ -93,6 +93,6 @@ Optimization of Auction and Crowdsale contracts to minimize gas costs in deploym
 - [Google Slides Presentation](https://docs.google.com/presentation/d/1K1VmnZDQIOmeCtK0qjW2Ku28JNX6BfrWNBkMgs7LzBQ/edit#slide=id.gc7142b1278_0_83)
 
 ## 9. D-app Demo <a name="Demo"></a>
-Click [here](frontend/index.html) to launch the Auction front end of our loan syndication contract
+Click [here](Frontend/index.html) to launch the Auction front end of our loan syndication contract
 
 
