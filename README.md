@@ -3,6 +3,10 @@
 
 Code developed by Arthur Moran, Ben Fischler, Eli Holden, Nika Chan and Phil Waddilove
 
+<p align="center">
+  <img src="Images/SYN3.png" />
+</p>
+
 ### Table of Contents
 1. [Introduction](#Introduction)
 2. [Reverse Auction Smart Contract to set the Borrower's Interest Rate](#auction)
@@ -128,7 +132,7 @@ Optimization of Auction and Crowdsale contracts to minimize gas costs in deploym
 
 4. Select `LoanAuction` from the contract dropdown in the Deployment section of Remix
 
-5. Copy the `auction_address` from **LOANCONTRACTDEPLOYER AT Ox** and paste it into the `At Address` field of the deployment section. Click on the `At Address` button and this should generate a new contract named **LOANAUCTION AT 0x**.
+5. Copy the `auction_address` from **LOANCONTRACTDEPLOYER AT 0x** and paste it into the `At Address` field of the deployment section. Click on the `At Address` button and this should generate a new contract named **LOANAUCTION AT 0x**.
 
 6. Competing syndicate managers can use the `bid button` under **LOANAUCTION AT 0x** to bid for the full amount of the loan at the lowest interest rate they are willing to receive.
 
@@ -148,14 +152,19 @@ Optimization of Auction and Crowdsale contracts to minimize gas costs in deploym
 
 ## 8. Appendix <a name="Appendix"></a>
 
-- **Dependencies:** Solidity, Remix, Ganache
+- This contract's Github Page: [Loan Syndication Github Page](https://nikanikachan.github.io/p3_loansyndication/)
+- **Dependencies:** Solidity, Remix, Ganache, Metamask
 - [Google Slides Presentation](https://docs.google.com/presentation/d/1K1VmnZDQIOmeCtK0qjW2Ku28JNX6BfrWNBkMgs7LzBQ/edit#slide=id.gc7142b1278_0_83)
 
 ## 9. D-app Demo <a name="Demo"></a>
 
-- For this section, please make sure you are in our Github page: [Loan Syndication](https://nikanikachan.github.io/p3_loansyndication/)
-- Click [here](Frontend/index.html) to launch the Auction front end of our loan syndication contract.
+- Your metamask should be in the Ropsten network to see all the features
+- Click [here](https://nikanikachan.github.io/p3_loansyndication/Frontend/index.html) to launch the Auction front end of our loan syndication contract.
 
 **Note that for the purpose of this demo, the loan amount has been set to 1 ETH for easier testing.
+
+If you do not have Metamesk installed, See GIF demo below:
+
+![gif](Images/auction.gif)
 
 
