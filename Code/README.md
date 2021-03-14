@@ -4,7 +4,9 @@ Instructions
 
 Before deploying there are certain time variables that can be established within the contract code. The limitations of solidity do not allow for time to be combined with uint variables as of March 2021. The two sections of time are for the crowdsale duration and loan contract duration. These will be preset at 7 days and 1 year; however, should one wish to test this contract it would be appropriate to change these to a smaller amount of time.
 
-![1](Code/Images2/Set_Time_Variables.png)
+p3_loansyndication/Code/
+
+![1](/p3_loansyndication/Images2/Set_Time_Variables.png)
 
 - Provide a name for the token, symbol, wallet address of the borrower, funding goal of the borrower, and maximum amount to be raised by the borrower.
 
@@ -14,7 +16,7 @@ Note: The cap amount is a functionality placeholder. In this version the bidders
 
 Use the loan auction address created by deploying the first contract to allow for the bidding by large major banks. The lowest bidder will win the auction and the rate entered will be used for the interest payment final calculation. The ether will be transferred to the borrower in exchange for the right to issue tokens on behalf of the borrower. When the borrower is satisfied with the auction results they can use the endAuction function to close the auction. Losing bidders can withdraw their ether with the withdraw function.
 
-![2](Code/Images2/Loan_Auction_Deployment.png)
+![2](/p3_loansyndication/Code/Images2/Loan_Auction_Deployment.png)
 
 Note: Improvements to this contract would include a self-destruct feature if the auction is not ended within a certain time. This would return ether to the bidders automatically.
 
