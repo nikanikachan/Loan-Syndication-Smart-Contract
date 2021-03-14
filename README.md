@@ -73,14 +73,14 @@ Today, the syndication (or distribution) process involves the underwriter contac
 
 Participants who may wish to trade the loan in future do not always know who owns it and who may want to buy it.  These banks often have to cross a trading desk (and potentially paying a fee to the underwriter) to do so.
 
-### b. Our solution: Crowdsale <a name="#crowdsalecontract"></a>
+### b. Our solution: Crowdsale <a name="crowdsalecontract"></a>
 
 Our solution is to deploy a token crowdsale to replace the manual process of calling up other banks to participate in the loan. The lead arranger, having won the loan from the reverse auction, now has the right to mint fungible tokens that other lenders can buy in exchange for Ether. These tokens are made fungible to make them tradeable between lenders. Following through with our previous example, the diagram below shows how the crowdsale would work.
 
 ![crowdsale](Images/crowdsale.png)
 
 
-### c. Crowdsale Contract Functions <a name="#crowdsalecontractfunctions"></a>
+### c. Crowdsale Contract Functions <a name="#crowdsalefunctions"></a>
 
 | Function | Description |
 | ------ | ----------- |
@@ -153,7 +153,9 @@ Optimization of Auction and Crowdsale contracts to minimize gas costs in deploym
 
 ## 9. D-app Demo <a name="Demo"></a>
 
-For this section, please make sure you are in our Github page:[Loan Syndication](https://nikanikachan.github.io/p3_loansyndication/)
-Click [here](Frontend/index.html) to launch the Auction front end of our loan syndication contract.
+- For this section, please make sure you are in our Github page: [Loan Syndication](https://nikanikachan.github.io/p3_loansyndication/)
+- Click [here](Frontend/index.html) to launch the Auction front end of our loan syndication contract.
+
+**Note that for the purpose of this demo, the loan amount has been set to 1 ETH for easier testing.
 
 
