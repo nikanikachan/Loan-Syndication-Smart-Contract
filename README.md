@@ -1,5 +1,5 @@
 # Project 3: Loan Syndication Smart Contracts
-### Replicating the loan syndication process using smart contracts on the Ethereum Blockchain
+### Tokenizing syndicated loans using smart contracts on the ethereum blockchain
 
 Code developed by Arthur Moran, Ben Fischler, Eli Holden, Nika Chan and Phil Waddilove
 
@@ -32,6 +32,8 @@ In this project, we replicate the loan syndication process using smart contracts
 
 ![Primer](Images/primer.png)
 
+
+
 ## 2. Reverse Auction Smart Contract to set the Borrower's Interest Rate <a name="auction"></a>
 
 ### a. How Lead Arrangers are chosen today <a name="manager"></a>
@@ -60,11 +62,11 @@ Our solution is to replace the archaic process of calling and requesting for pro
 | `balance`    | Call function to check balance in auction contract |
 | `beneficiary`    | Call function to show where the ETH from auction goes. In this example, beneficiary is the Borrower |
 | `deployer`    | Call function to show wallet of deployer. In this example, deployer is Borrower |
-| `get_lowestBidder`    | Call function to show wallet of current lowest rate bidder |
+| `get_lowestBidder`    | Call function to show address of current lowest bidder |
 | `get_lowestRate`    | Call function to show current lowest rate |
 | `get_BidList`    | Call Function to show bid value of an address. In this example, bid value must equal the entire loan amount  |
-| `goal`    | Call function to show borrower's full loan amount |
-| `lowestBid`    | Call function to show borrower's loan amount. Note that all bidders must bid for the full notional amount |
+| `goal`    | Call function to show borrower's loan amount |
+| `lowestBid`    | Call function to show lowest bid value. In this example, bid value must equal the entire loan amount  |
 | `lowestBidder`    | Call function to show address of current lowest bidder |
 | `lowestRate`    | Call function to show current lowest rate |
 
