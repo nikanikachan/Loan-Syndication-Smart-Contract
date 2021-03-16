@@ -156,13 +156,13 @@ Optimization of Auction and Crowdsale contracts to minimize gas costs in deploym
 
 - This contract's Github Page: [Loan Syndication Github Page](https://nikanikachan.github.io/p3_loansyndication/)
 - **Dependencies:** Solidity, Remix, Ganache, Metamask
-- [Google Slides Presentation](https://docs.google.com/presentation/d/1K1VmnZDQIOmeCtK0qjW2Ku28JNX6BfrWNBkMgs7LzBQ/edit#slide=id.gc7142b1278_0_83)
+- [Presentation Slides](https://github.com/Luminous171/Project_3/blob/main/2021-03-16%20-%20Loan%20Syndication.pdf)
 
 ## 9. D-app Demo <a name="Demo"></a>
 
 - Your metamask should be in the Ropsten network to see all the features
 - Note that for the purpose of this demo, the loan amount has been set to 1 ETH for easier testing.
-- Click [here](https://nikanikachan.github.io/p3_loansyndication/Frontend/index.html) to launch the Auction front end of our loan syndication contract in your browser.
+- Click [here](https://nikanikachan.github.io/p3_loansyndication/Frontend/index.html) to launch the Auction user interface of our loan syndication contract in your browser.
 
 If you do not have Metamask installed, See GIF demo below:
 
